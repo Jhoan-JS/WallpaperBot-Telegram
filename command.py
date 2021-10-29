@@ -1,7 +1,7 @@
 from praw.reddit import Subreddit
 from config import reddit
 import random
-
+limit = 300
 # subreddit = reddit.subreddit("SkyPorn")
 
 
@@ -19,7 +19,7 @@ def fantasy():
 
     statement = ""
 
-    for submmision in functions[random.randint(0, len(functions)-1)](limit=50):
+    for submmision in functions[random.randint(0, len(functions)-1)](limit=limit):
 
         imgs.append(submmision.url)
 
@@ -37,7 +37,7 @@ def future():
 
     statement = ""
 
-    for submmision in functions[random.randint(0, len(functions)-1)](limit=50):
+    for submmision in functions[random.randint(0, len(functions)-1)](limit=limit):
 
         imgs.append(submmision.url)
 
@@ -56,7 +56,7 @@ def wallpapersGeneral():
 
     statement = ""
 
-    for submmision in functions[random.randint(0, len(functions)-1)](limit=50):
+    for submmision in functions[random.randint(0, len(functions)-1)](limit=limit):
 
         imgs.append(submmision.url)
 
@@ -74,7 +74,7 @@ def mobileWallpapers():
 
     statement = ""
 
-    for submmision in functions[random.randint(0, len(functions)-1)](limit=50):
+    for submmision in functions[random.randint(0, len(functions)-1)](limit=limit):
 
         imgs.append(submmision.url)
 
@@ -90,7 +90,7 @@ def anime():
 
     statement = ""
 
-    for submmision in functions[random.randint(0, len(functions))-1](limit=50):
+    for submmision in functions[random.randint(0, len(functions))-1](limit=limit):
 
         imgs.append(submmision.url)
 
