@@ -1,7 +1,7 @@
 from praw.reddit import Subreddit
 from config import reddit
 import random
-limit = 300
+limit = 100
 # subreddit = reddit.subreddit("SkyPorn")
 
 
