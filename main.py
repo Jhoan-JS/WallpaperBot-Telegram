@@ -16,14 +16,14 @@ wallpaperBot = telebot.TeleBot(API_KEY)
 def start(message):
 
     wallpaperBot.reply_to(
-        message, "Hi, I'am a wallpapers bot. Type /commands to see all my commands and get satisfactory experience")
+        message, "Hi, I'am a wallpapers bot. Type /help to see all my commands and get satisfactory experience")
 # def start(message):
 
 #     print(message.text)
 #     wallpaperBot.send_message(message.chat.id,"Hi, I'am a wallpapers bot")
 
 
-@wallpaperBot.message_handler(commands=["commands"])
+@wallpaperBot.message_handler(commands=["help"])
 def showCommands(message):
     wallpaperBot.reply_to(
         message, "/wallpaper - A general wallpaper(mobile,pc) \n/mobile - A mobile wallpaper \n/fantasy - fantasy wallpaper \n/future - future wallpaper \n/anime - anime wallpaper")
